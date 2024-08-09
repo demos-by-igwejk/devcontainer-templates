@@ -1,0 +1,11 @@
+{
+    "name": "igwejk's demo Java Dev Container",
+    "image": "mcr.microsoft.com/devcontainers/java:0-${templateOption:imageVariant}",
+    "features": {
+        "ghcr.io/devcontainers/features/node:1": {
+            "version": "${templateOption:nodeVersion}",
+            "installMaven": "${templateOption:installMaven}"
+        }
+    },
+    "postCreateCommand": "echo 'Your Java ${templateOption:imageVariant} environment is ready, enjoy!'"
+}

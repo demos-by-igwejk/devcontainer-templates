@@ -1,0 +1,48 @@
+{
+    "id": "java",
+    "version": "1.0.0",
+    "name": "igwejk's Java dev container template",
+    "description": "Demonstrate usage of Java dev container templates",
+    "options": {
+        "imageVariant": {
+            "type": "string",
+            "description": "Specify version of java.",
+            "proposals": [
+                "17-bullseye",
+                "17-buster",
+                "11-bullseye",
+                "11-buster",
+                "17",
+                "11"
+            ],
+            "default": "17-bullseye"
+        },
+        "nodeVersion": {
+            "type": "string",
+            "proposals": [
+                "latest",
+                "16",
+                "14",
+                "10",
+                "none"
+            ],
+            "default": "latest",
+            "description": "Specify version of node, or 'none' to skip node installation."
+        },
+        "installMaven": {
+            "type": "boolean",
+            "description": "Install Maven, a management tool for Java.",
+            "default": "false"
+        }
+    },
+    "platforms": [
+        "Any"
+    ],
+    "publisher": "Igwe Kalu",
+    "keywords": [
+        "devcontainer",
+        "template",
+        "java",
+        "demo"
+    ]
+}

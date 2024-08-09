@@ -1,0 +1,24 @@
+name: "(Release) Release dev container templates"
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: "Publish"
+        uses: devcontainers/action@v1
+        with:
+          generate-docs: "true"
+          publish-templates: "true"
+          base-path-to-templates: "./templates"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
