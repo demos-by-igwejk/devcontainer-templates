@@ -7,5 +7,5 @@
             "installMaven": "${templateOption:installMaven}"
         }
     },
-    "postCreateCommand": "echo 'Your Java ${templateOption:imageVariant} environment is ready, enjoy!'"
+    "postCreateCommand": "echo 'Your Java ${templateOption:imageVariant} environment is ready, enjoy it well and truly!'"
 }
